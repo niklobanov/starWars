@@ -1,0 +1,50 @@
+//
+//  StarWarsAPI.swift
+//  starWars
+//
+//  Created by Никита on 04/04/2019.
+//  Copyright © 2019 Никита. All rights reserved.
+//
+
+import Foundation
+import Moya
+
+enum Provider {
+    case result(searching: String)
+}
+
+extension Provider: TargetType {
+    var baseURL: URL {
+        switch self {
+        case .result(let searching):
+            return URL(string: "https://swapi.co/api/people/?search=\(searching)")!
+        }
+    }
+
+    var path: String {
+        return ""
+    }
+
+    var method: Moya.Method {
+        return .get
+    }
+
+    var sampleData: Data {
+        return Data()
+    }
+
+    var parameterEncoding: ParameterEncoding {
+        return URLEncoding.default
+    }
+
+    var task: Task {
+        return .requestPlain
+    }
+
+    var headers: [String : String]? {
+        return ["Content-type" : "application/json"]
+    }
+
+}
+
+
