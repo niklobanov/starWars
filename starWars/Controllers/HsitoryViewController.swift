@@ -19,6 +19,8 @@ class HsitoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.tableFooterView = UIView()
+
         let realm = try! Realm()
         let  people = realm.objects(Person.self)
         Observable.collection(from: people)

@@ -61,6 +61,7 @@ final class ViewController: UIViewController {
         searchBar.showsCancelButton = true
         searchBar.placeholder = "Enter request"
         tableView.tableHeaderView = searchController.searchBar
+        tableView.tableFooterView = UIView()
         definesPresentationContext = true
     }
 }
