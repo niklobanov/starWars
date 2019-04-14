@@ -8,14 +8,14 @@
 
 import Foundation
  
-struct Result {
+struct Search {
     let count: Int!
     let next: String?
     let previous: String?
     let results: [Person]!
 }
 
-extension Result: Decodable {
+extension Search: Decodable {
     enum ResultCodingKeys: String, CodingKey {
         case count
         case next

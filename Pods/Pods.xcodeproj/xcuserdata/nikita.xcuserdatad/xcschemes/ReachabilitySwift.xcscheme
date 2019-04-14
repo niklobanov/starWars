@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BA791047A280D7A5C355DB4FC9A67DDB"
-               BuildableName = "Pods_starWars.framework"
-               BlueprintName = "Pods-starWars"
+               BlueprintIdentifier = "7C6B3A3F6B0746930E83B160DEC60B7F"
+               BuildableName = "Reachability.framework"
+               BlueprintName = "ReachabilitySwift"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BA791047A280D7A5C355DB4FC9A67DDB"
-            BuildableName = "Pods_starWars.framework"
-            BlueprintName = "Pods-starWars"
+            BlueprintIdentifier = "7C6B3A3F6B0746930E83B160DEC60B7F"
+            BuildableName = "Reachability.framework"
+            BlueprintName = "ReachabilitySwift"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

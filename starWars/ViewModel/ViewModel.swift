@@ -11,6 +11,7 @@ import RxSwift
 import Moya
 import RxCocoa
 
+
 final class SearchViewModel {
     let disposeBag = DisposeBag()
     let provider: MoyaProvider<Provider> = MoyaProvider<Provider>()
@@ -20,10 +21,11 @@ final class SearchViewModel {
     func getResult(search: String) -> Observable<[Person]> {
         return  provider.rx.request(.result(searching: search))
             .filterSuccessfulStatusCodes()
-            .map(Result.self)
+            .map(Search.self)
             .map {
                 $0.results
             }.asObservable()
+    
     }
 
     init() {

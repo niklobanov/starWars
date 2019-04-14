@@ -10,6 +10,7 @@
 		111217AB225B6751009C4E24 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111217A9225B6751009C4E24 /* DetailViewController.swift */; };
 		111217AC225B6751009C4E24 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 111217AA225B6751009C4E24 /* DetailViewController.xib */; };
 		111217AE225B9356009C4E24 /* HsitoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111217AD225B9356009C4E24 /* HsitoryViewController.swift */; };
+		11BD5D752263E33700FF272C /* ReachAbility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5D742263E33700FF272C /* ReachAbility.swift */; };
 		11C25ED12254A4DD0028AF4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C25ED02254A4DD0028AF4B /* AppDelegate.swift */; };
 		11C25ED32254A4DD0028AF4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C25ED22254A4DD0028AF4B /* ViewController.swift */; };
 		11C25ED62254A4DD0028AF4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C25ED42254A4DD0028AF4B /* Main.storyboard */; };
@@ -17,7 +18,7 @@
 		11C25EDB2254A4DE0028AF4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C25ED92254A4DE0028AF4B /* LaunchScreen.storyboard */; };
 		11C25EE62255260A0028AF4B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C25EE52255260A0028AF4B /* Person.swift */; };
 		11C25EE82256197C0028AF4B /* StarWarsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C25EE72256197C0028AF4B /* StarWarsAPI.swift */; };
-		11C25EEA225632B50028AF4B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C25EE9225632B50028AF4B /* Result.swift */; };
+		11C25EEA225632B50028AF4B /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C25EE9225632B50028AF4B /* Search.swift */; };
 		11C25EF322575BCE0028AF4B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C25EF222575BCE0028AF4B /* ViewModel.swift */; };
 		B6320F0F5A29368A838F9FD7 /* Pods_starWars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5100309FC28873B0EEF5A8AF /* Pods_starWars.framework */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		111217A9225B6751009C4E24 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		111217AA225B6751009C4E24 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		111217AD225B9356009C4E24 /* HsitoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HsitoryViewController.swift; sourceTree = "<group>"; };
+		11BD5D742263E33700FF272C /* ReachAbility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachAbility.swift; sourceTree = "<group>"; };
 		11C25ECD2254A4DD0028AF4B /* starWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = starWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C25ED02254A4DD0028AF4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11C25ED22254A4DD0028AF4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,7 +37,7 @@
 		11C25EDC2254A4DE0028AF4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11C25EE52255260A0028AF4B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		11C25EE72256197C0028AF4B /* StarWarsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsAPI.swift; sourceTree = "<group>"; };
-		11C25EE9225632B50028AF4B /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		11C25EE9225632B50028AF4B /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		11C25EF222575BCE0028AF4B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		5100309FC28873B0EEF5A8AF /* Pods_starWars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_starWars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5353BDF974C16FABC5D38FED /* Pods-starWars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-starWars.debug.xcconfig"; path = "Pods/Target Support Files/Pods-starWars/Pods-starWars.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,11 +76,29 @@
 		11459570225D42B100E7C119 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				11BD5D742263E33700FF272C /* ReachAbility.swift */,
 				11C25ED02254A4DD0028AF4B /* AppDelegate.swift */,
 				11C25ED72254A4DE0028AF4B /* Assets.xcassets */,
 				11C25ED92254A4DE0028AF4B /* LaunchScreen.storyboard */,
 			);
 			path = Supporting;
+			sourceTree = "<group>";
+		};
+		11BD5D762263E9E300FF272C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				11C25EE72256197C0028AF4B /* StarWarsAPI.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		11BD5D772263E9F600FF272C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				11C25ED22254A4DD0028AF4B /* ViewController.swift */,
+				111217AD225B9356009C4E24 /* HsitoryViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		11C25EC42254A4DD0028AF4B = {
@@ -102,10 +122,10 @@
 		11C25ECF2254A4DD0028AF4B /* starWars */ = {
 			isa = PBXGroup;
 			children = (
+				11BD5D762263E9E300FF272C /* Networking */,
 				1145956F225D429500E7C119 /* DetailVC */,
 				11C25EE4225525DC0028AF4B /* Models */,
-				11C25ED22254A4DD0028AF4B /* ViewController.swift */,
-				111217AD225B9356009C4E24 /* HsitoryViewController.swift */,
+				11BD5D772263E9F600FF272C /* Controllers */,
 				1145956E225D427500E7C119 /* ViewModel */,
 				11459570225D42B100E7C119 /* Supporting */,
 				11C25ED42254A4DD0028AF4B /* Main.storyboard */,
@@ -118,8 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				11C25EE52255260A0028AF4B /* Person.swift */,
-				11C25EE9225632B50028AF4B /* Result.swift */,
-				11C25EE72256197C0028AF4B /* StarWarsAPI.swift */,
+				11C25EE9225632B50028AF4B /* Search.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -238,6 +257,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-starWars/Pods-starWars-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -249,6 +269,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -268,9 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11BD5D752263E33700FF272C /* ReachAbility.swift in Sources */,
 				11C25EE62255260A0028AF4B /* Person.swift in Sources */,
 				11C25EE82256197C0028AF4B /* StarWarsAPI.swift in Sources */,
-				11C25EEA225632B50028AF4B /* Result.swift in Sources */,
+				11C25EEA225632B50028AF4B /* Search.swift in Sources */,
 				111217AE225B9356009C4E24 /* HsitoryViewController.swift in Sources */,
 				11C25ED32254A4DD0028AF4B /* ViewController.swift in Sources */,
 				11C25EF322575BCE0028AF4B /* ViewModel.swift in Sources */,

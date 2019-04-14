@@ -13,7 +13,6 @@ import RxRealm
 import RealmSwift
 
 class HsitoryViewController: UIViewController {
-
     @IBOutlet weak var tableView: UITableView!
     let disposeBag = DisposeBag()
 

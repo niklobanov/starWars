@@ -20,7 +20,6 @@ final class ViewController: UIViewController {
     private var searchViewModel: SearchViewModel?
     let disposeBag = DisposeBag()
 
-
     override func viewWillAppear(_ animated: Bool) {
         if let index = tableView.indexPathForSelectedRow{
             tableView.deselectRow(at: index, animated: true)
@@ -29,6 +28,7 @@ final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        addReachabilityObserver()
         configureSearchController()
         searchViewModel = SearchViewModel()
         if let viewModel = searchViewModel {
@@ -51,6 +51,11 @@ final class ViewController: UIViewController {
         }
     }
 
+    
+    deinit {
+        removeReachabilityObserver()
+    }
+
     private func configureSearchController() {
         searchController.obscuresBackgroundDuringPresentation = false
         searchBar.showsCancelButton = true
@@ -60,3 +65,14 @@ final class ViewController: UIViewController {
     }
 }
 
+
+
+extension ViewController: ReachabilityObserverDelegate {
+    func reachabilityChanged(_ isReachable: Bool) {
+        if !isReachable {
+            let alert = UIAlertController(title: "Error", message: "No connection", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+        }
+    }
+}

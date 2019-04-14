@@ -10,4 +10,5 @@ target 'starWars' do
 	 pod 'RealmSwift', '3.12.0'
 	 pod 'RxRealm'
 	 pod 'Moya/RxSwift'
+	 pod 'ReachabilitySwift', '4.2.0'
 end

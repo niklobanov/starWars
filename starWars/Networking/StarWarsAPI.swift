@@ -17,14 +17,13 @@ extension Provider: TargetType {
     var baseURL: URL {
         switch self {
         case .result(let searching):
-            if searching.isEmpty {
+            guard !searching.isEmpty else {
                 return URL(string: "https://swapi.co/api/people/?search=nil")!
-            } else {
-                guard let url = URL(string:  "https://swapi.co/api/people/?search=\(searching)") else {
-                    return URL(string: "https://swapi.co/api/people/?search=nil")!
-                }
-                return url
             }
+            guard let url = URL(string:  "https://swapi.co/api/people/?search=\(searching)")  else {
+                 return URL(string: "https://swapi.co/api/people/?search=nil")!
+            }
+            return url
         }
     }
 
